@@ -1,0 +1,5 @@
+F:\dev\reactApi\Activities\API\obj\Debug\netcoreapp3.1\API.csprojAssemblyReference.cache
+F:\dev\reactApi\Activities\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
+F:\dev\reactApi\Activities\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
+F:\dev\reactApi\Activities\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+F:\dev\reactApi\Activities\API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache
