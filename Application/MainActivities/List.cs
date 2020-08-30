@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -6,6 +7,7 @@ using Data;
 using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Application.MainActivities
 {
@@ -15,6 +17,7 @@ namespace Application.MainActivities
         public class Handler : IRequestHandler<Query, List<MainActivity>>
         {
             private readonly DataContext _context;
+            private readonly ILogger<List> _logger;
             public Handler(DataContext context)
             {
                 _context = context;

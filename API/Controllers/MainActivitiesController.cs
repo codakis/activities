@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Application.MainActivities;
 using Domain;
@@ -21,6 +23,12 @@ namespace API.Controllers
         public async Task<ActionResult<List<MainActivity>>> List()
         {
             return await _mediator.Send(new List.Query());
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<MainActivity>> Details(Guid id)
+        {
+            return await _mediator.Send(new Details.Query { Id = id });
         }
     }
 }
