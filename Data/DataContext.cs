@@ -12,6 +12,7 @@ namespace Data
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<MainActivity> MainActivities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
