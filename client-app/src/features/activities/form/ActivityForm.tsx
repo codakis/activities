@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, FormEvent } from "react";
 import { Segment, Form, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/Models/activity";
 import { v4 as uuid } from "uuid";
@@ -76,7 +76,7 @@ export const ActivityForm: React.FC<IProps> = ({
           name="category"
         />
         <Form.Input
-          type="date"
+          type="datetime-local"
           placeholder="Date"
           value={activity.date}
           onChange={handleInputChange}
